@@ -12,8 +12,12 @@ html {
   font-family: 'Bowlby One SC', cursive;
   color: black;
   text-shadow: -1px 0 yellow, 0 1px yellow, 1px 0 yellow, 0 -1px yellow;
+  text-align: center;
 }
 
 #planet-choices h4 {
-  
+  text-align: center;
+  font-family: 'Bowlby One SC', cursive;
+  text-shadow: -1px 0 yellow, 0 1px yellow, 1px 0 yellow, 0 -1px yellow;
+  font-size: .8rem;
 }
