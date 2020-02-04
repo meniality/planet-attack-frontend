@@ -5,10 +5,14 @@ html {
 #planet-choices{
   display: flex;
   justify-content: space-around;
-  background-image: url("https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
 }
 
-#planet-choices h2{
+body {
+  background-image: url("https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-size: cover;
+}
+
+h2 {
   font-family: 'Bowlby One SC', cursive;
   color: black;
   text-shadow: -1px 0 yellow, 0 1px yellow, 1px 0 yellow, 0 -1px yellow;
@@ -20,4 +24,24 @@ html {
   font-family: 'Bowlby One SC', cursive;
   text-shadow: -1px 0 yellow, 0 1px yellow, 1px 0 yellow, 0 -1px yellow;
   font-size: .8rem;
+}
+
+#fight-button {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+#the-real-button {
+  background-color: yellow;
+  width: 4rem;
+  height: 2rem;
+  border-radius: 1rem;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-weight: 900;
+  border-color: black
+}
+
+form {
+  text-align: center;
 }

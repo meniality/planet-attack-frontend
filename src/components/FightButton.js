@@ -26,8 +26,8 @@ class FightButton extends Component{
 
   render() {
     return (
-      <div>
-        <button onClick = {this.displayWinner}>FIGHT!</button>
+      <div id="fight-button">
+        <button id="the-real-button" onClick = {this.displayWinner}>FIGHT!</button>
       </div>
     )
   }
