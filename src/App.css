@@ -1,0 +1,4 @@
+#planet-choices{
+  display: flex;
+  justify-content: space-around;
+}
