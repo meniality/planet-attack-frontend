@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { Component } from 'react'
 
- export default function(props){
-    return(
-      <div>
-        {console.log(props)}
-      </div>
-    )
+ class HandleMath extends Component {
+    render(){
+      return (
+        <div>
+          <p>test</p>
+        </div>
+      )
+    }
  }
+
+ export default HandleMath
