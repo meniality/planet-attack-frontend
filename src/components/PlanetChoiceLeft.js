@@ -8,7 +8,7 @@ class PlanetChoiceLeft extends Component {
   handleClick = (event) => {
     event.preventDefault()
     const formData = new FormData(event.target.parentNode)
-    this.props.setPlanetLeft(formData.get('planetId'))
+    this.props.setChoicesLeft(formData.get('planetId'), formData.get('modifierId'))
   }
 
   render(props){
@@ -20,6 +20,11 @@ class PlanetChoiceLeft extends Component {
           <select name="planetId">
             {this.props.planets.map(planet =>{
               return<option value ={planet.id}>{planet.name}</option>
+            })}
+          </select>
+          <select name="modifierId">
+            {this.props.modifiers.map(modifier =>{
+              return<option value ={modifier.id}>{modifier.damage_modifier_name}</option>
             })}
           </select>
           <button onClick={this.handleClick} >Submit</button>
