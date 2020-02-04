@@ -14,7 +14,7 @@ class PlanetChoiceRight extends Component {
   render(props){
     return (
       <div id ="planet-choice-right">
-        <h2>Player One</h2>
+        <h2>Player Two</h2>
         <h4>Select Your Planet</h4>
         <form>
           <select name="planetId">
