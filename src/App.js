@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import PlanetChoiceLeft from './components/PlanetChoiceLeft'
 import PlanetChoiceRight from './components/PlanetChoiceRight'
+import FightButton from './components/FightButton'
 
 
 
@@ -51,6 +52,7 @@ class App extends Component {
           <PlanetChoiceLeft planets={this.state.planets} modifiers = {this.state.modifiers} setChoicesLeft={this.setChoicesLeft}/>
           <PlanetChoiceRight planets={this.state.planets} modifiers = {this.state.modifiers} setChoicesRight={this.setChoicesRight}/>
         </div>
+        <FightButton {...this.state}/>
       </div>
     );
   }
