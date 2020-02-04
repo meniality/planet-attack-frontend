@@ -15,6 +15,8 @@ class App extends Component {
     rightPlanetChoice: 0,
     leftModifierChoice: 0,
     rightModifierChoice: 0,
+    winnerMessage: '',
+
   }
 
   componentDidMount(){
@@ -45,6 +47,12 @@ class App extends Component {
     })
   }
 
+  setWinnerMessage = (message) => {
+    this.setState({
+      winnerMessage: message
+    })
+  }
+
   render(){
     return (
       <div className="App">
@@ -52,7 +60,10 @@ class App extends Component {
           <PlanetChoiceLeft planets={this.state.planets} modifiers = {this.state.modifiers} setChoicesLeft={this.setChoicesLeft}/>
           <PlanetChoiceRight planets={this.state.planets} modifiers = {this.state.modifiers} setChoicesRight={this.setChoicesRight}/>
         </div>
-        <FightButton {...this.state}/>
+        <FightButton {...this.state} setWinnerMessage={this.setWinnerMessage}/>
+        <div id="winnerDiv">
+          <h2>{this.state.winnerMessage}</h2>
+        </div>
       </div>
     );
   }
