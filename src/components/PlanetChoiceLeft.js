@@ -15,7 +15,7 @@ class PlanetChoiceLeft extends Component {
     return (
       <div id ="planet-choice-left">
         <h2>Player One</h2>
-        <h4>Select Your Planet</h4>
+        <h4>Select Your Planet and Move Set</h4>
         <form>
           <select name="planetId">
             {this.props.planets.map(planet =>{
