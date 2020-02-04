@@ -16,6 +16,8 @@ class App extends Component {
     leftModifierChoice: 0,
     rightModifierChoice: 0,
     winnerMessage: '',
+    leftImage: '',
+    rightImage:'',
 
   }
 
@@ -47,9 +49,11 @@ class App extends Component {
     })
   }
 
-  setWinnerMessage = (message) => {
+  setWinnerMessage = (message, leftURL, rightURL) => {
     this.setState({
-      winnerMessage: message
+      winnerMessage: message,
+      leftImage: leftURL,
+      rightImage: rightURL
     })
   }
 
@@ -62,6 +66,10 @@ class App extends Component {
         </div>
         <FightButton {...this.state} setWinnerMessage={this.setWinnerMessage}/>
         <div id="winnerDiv">
+          <div id='imageDiv'>
+            <img id = "left-planet" src={this.state.leftImage} alt =""/>
+            <img id = "right-planet" src={this.state.rightImage} alt = ""/>
+          </div>
           <h2>{this.state.winnerMessage}</h2>
         </div>
       </div>

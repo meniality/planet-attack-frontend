@@ -15,7 +15,7 @@ class FightButton extends Component{
     rightTotal = rightPlanet.base_attack + rightModifier.damage_modifier
 
     if (leftTotal > rightTotal) {
-      this.props.setWinnerMessage(`${leftPlanet.name} destroys ${rightPlanet.name} with a ${leftModifier.damage_modifier_name}!`)
+      this.props.setWinnerMessage(`${leftPlanet.name} destroys ${rightPlanet.name} with a ${leftModifier.damage_modifier_name}!`, leftPlanet.image, rightPlanet.image)
     }
     else {
       this.props.setWinnerMessage(`${rightPlanet.name} destroys ${leftPlanet.name} with a ${rightModifier.damage_modifier_name}!`)

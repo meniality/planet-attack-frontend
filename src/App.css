@@ -45,3 +45,18 @@ h2 {
 form {
   text-align: center;
 }
+
+#left-planet {
+  width: 25rem;
+  height: 25rem;
+}
+
+#right-planet {
+  width: 25rem;
+  height: 25rem;
+}
+
+#imageDiv{
+  display: flex;
+  justify-content: space-around;
+}
